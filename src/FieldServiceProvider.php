@@ -60,7 +60,7 @@ class FieldServiceProvider extends ServiceProvider
         }
 
         Route::middleware(['nova'])
-            ->prefix('nova-vendor/ferdiunal/nova-editable-field/')
+            ->prefix('nova-vendor/gamalkh299/nova-editable-field/')
             ->group(__DIR__.'/../routes/api.php');
     }
 

@@ -10,4 +10,4 @@ mix
   .postCss("resources/css/field.css", "css", [
       require("tailwindcss")("tailwind.config.js"),
   ])
-  .nova('ferdiunal/nova-editable-field')
+  .nova('gamalkh299/nova-editable-field')
