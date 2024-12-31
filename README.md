@@ -1,5 +1,3 @@
-<img src="./art/banner.png" />
-
 # Nova Editable Field
 
 The purpose of this Laravel Nova Field is to allow easy updates to records within tables (development and testing for the Detail view are still in progress). So far, I haven't tested it with third-party components. It's very easy to use and can be seamlessly integrated with form fields and BelongsTo fields.
