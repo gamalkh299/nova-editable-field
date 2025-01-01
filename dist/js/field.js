@@ -38,10 +38,7 @@ function _toPrimitive(t, r) { if ("object" != _typeof(t) || !t) return t; var e 
       });
     },
     formFieldComponent: function formFieldComponent() {
-      var _this = this;
-      this.field.addEventListener("input", function () {
-        console.log("input" + _this.field.value);
-      });
+      // this.field.
       return _objectSpread(_objectSpread({}, this.field), {}, {
         component: "form-".concat(this.field.original_field)
       });
@@ -54,9 +51,9 @@ function _toPrimitive(t, r) { if ("object" != _typeof(t) || !t) return t; var e 
       }
     },
     currentResourceIndex: function currentResourceIndex() {
-      var _this2 = this;
+      var _this = this;
       return this.resources.findIndex(function (resource) {
-        return resource === _this2.resource;
+        return resource === _this.resource;
       });
     },
     side: function side() {
@@ -65,14 +62,14 @@ function _toPrimitive(t, r) { if ("object" != _typeof(t) || !t) return t; var e 
   },
   methods: {
     onConfirm: function onConfirm() {
-      var _this3 = this;
+      var _this2 = this;
       console.log(this.field);
       return;
       this.loading = true;
       var formData = new FormData();
       this.formFieldComponent.fill(formData);
       Nova.request().post("".concat(window.NovaEditableField.baseUrl, "/confirm/").concat(this.resourceName, "/").concat(this.resource.id.value, "/").concat(this.field.attribute), formData).then(function () {
-        _this3.loading = false;
+        _this2.loading = false;
         Nova.$emit("refresh-resources");
       });
     }
