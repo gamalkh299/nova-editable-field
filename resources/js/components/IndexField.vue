@@ -76,7 +76,7 @@ export default {
   methods: {
     onConfirm() {
 
-      console.log(this.resourceName,this.resource.id.value,this.field.attribute);
+      console.log(this.field);
       return;
       this.loading = true;
       const formData = new FormData();

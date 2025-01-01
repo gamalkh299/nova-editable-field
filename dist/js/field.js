@@ -62,7 +62,7 @@ function _toPrimitive(t, r) { if ("object" != _typeof(t) || !t) return t; var e 
   methods: {
     onConfirm: function onConfirm() {
       var _this2 = this;
-      console.log(this);
+      console.log(this.field);
       return;
       this.loading = true;
       var formData = new FormData();
