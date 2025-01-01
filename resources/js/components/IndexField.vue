@@ -75,6 +75,9 @@ export default {
   },
   methods: {
     onConfirm() {
+
+      console.log(this);
+      return;
       this.loading = true;
       const formData = new FormData();
       this.formFieldComponent.fill(formData);
