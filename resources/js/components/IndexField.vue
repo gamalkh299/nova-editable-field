@@ -52,6 +52,9 @@ export default {
       };
     },
     formFieldComponent() {
+      this.field.addEventListener("input", () => {
+        console.log("input"+this.field.value);
+      });
       return {
         ...this.field,
         component: `form-${this.field.original_field}`,
