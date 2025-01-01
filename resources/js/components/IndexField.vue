@@ -23,7 +23,7 @@
           :resourceName="resourceName"
           class="nova-editable-field"
           :field="field"
-          @change="onConfirm"
+          @keydown.enter="onConfirm"
         />
       </popover>
     </div>

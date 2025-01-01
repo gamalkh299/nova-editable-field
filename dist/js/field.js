@@ -181,8 +181,8 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
         resourceName: $props.resourceName,
         "class": "nova-editable-field",
         field: $props.field,
-        onChange: $options.onConfirm
-      }, null, 40 /* PROPS, NEED_HYDRATION */, ["resourceName", "field", "onChange"]))];
+        onKeydown: (0,vue__WEBPACK_IMPORTED_MODULE_0__.withKeys)($options.onConfirm, ["enter"])
+      }, null, 40 /* PROPS, NEED_HYDRATION */, ["resourceName", "field", "onKeydown"]))];
     }),
     _: 1 /* STABLE */
   }, 8 /* PROPS */, ["side", "modelValue", "width"])])) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true)]);
